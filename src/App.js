@@ -13,6 +13,7 @@ class App extends Component {
         return (
             <Router>
                 <div>
+
                     <div>
                         <Link to={'/users'}>Users</Link>
                     </div>
@@ -22,6 +23,7 @@ class App extends Component {
                     <div>
                         <Link to={'/comments'}>Comments</Link>
                     </div>
+
                     <div className={'app-route'}>
                         <Switch>
                             <Route path={'/users'}>
@@ -34,8 +36,8 @@ class App extends Component {
                                 <AllComments/>
                             </Route>
                         </Switch>
-
                     </div>
+                    
                 </div>
             </Router>
         );
